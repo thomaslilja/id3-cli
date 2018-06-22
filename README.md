@@ -9,11 +9,21 @@ Command Line Interface to get and set ID3 meta tags on MP3's.
 
 ## Usage
 
+### Get tags
+
   `id3-cli get <file>`
 
   or
 
   `id3 get <file>`
+
+### Set tags
+
+  `id3-cli set <file>`
+
+  or
+
+  `id3 set <file>`
 
 ## Tests
 
