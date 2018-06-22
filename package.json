@@ -2,12 +2,16 @@
   "name": "id3-cli",
   "version": "0.0.1",
   "description": "Command Line Interface to get and set ID3 meta tags on MP3's.",
-  "main": "build/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "babel ./src -d ./lib",
+    "build": "babel -w ./src -d ./lib",
     "lint": "eslint ./src",
     "test": "nyc mocha --require babel-core/register",
     "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "id3-cli": "./lib/index.js",
+    "id3": "./lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +29,17 @@
     "url": "https://github.com/ThomasLilja/id3-cli/issues"
   },
   "homepage": "https://github.com/ThomasLilja/id3-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "commander": "^2.15.1",
+    "figlet": "^1.2.0",
+    "inquirer": "^6.0.0",
+    "lodash.foreach": "^4.5.0",
+    "lodash.pick": "^4.4.0",
+    "node-id3": "^0.1.5"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
