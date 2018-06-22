@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - node
+  - '6'
+  - '8'
+  - '10'
+cache:
+  directories:
+    - 'node_modules'
+before_deploy:
+  - npm run build
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: t.lilja83@gmail.com
+  api_key:
+    secure: LXcCt6exKqq+iiJ62375gTeI73CdGhLUh/PscpHM0EZUaQb4N88IIscwYi3wtMIY0dnRTzBKXUKZS6IBgg4AvgOcX0BIeger4/o8dPWhgKRDxDh9zImn5oibXRPcQW+VQWkpJIK2KPo2VxmsbNPSq2hp+PazP+oVONEKlPGD6xQ8BI92d5QTpt+2y42l15Jbnc5rE0STqs09o5iUy10hpQzVV0L5jclqifrH4BESLLEBBbP3ACRhLa1PDZ6eZSKlahV67aEDoxCeW1okdUzEwGyamZH0YKZzAnrypBBxcMX141XdqrzyyR7wPOqWlAk1CSabuRkv3IxebC1Ku21rl/7Xu8AsjeJqQYq1JMR1IBEdfmKacC/DPoKUeWaJ/0zpImXVym0SJZU3ayYBsAvcCrWSYR3eMq7ixQzMmWMLhYiTQBhsYdMMGm10p2oC2lhsHDFtQKlfnbBhjIZkYP/eoFzQg/bwHscFRRQ88H53C4RB/cnRDWEsnxycWQpFeci4qewT0HYtHUehGtGaFuHOp0/4EqlMt4rLCkX/GnuHHI9JNlbdH0MnVZKQ1Z2lJClSTM5gdkN4eZxx0OWVkIw+32N1vD0nGEv5I8cXBv1O14Kj95IR45r4ja0wfy0I495qkgFOZp5Uqa7ObkHGw7XmBkQ52C7MIMz/f08Lz0QPujA=
+  on:
+    tags: true
+    repo: ThomasLilja/id3-cli
