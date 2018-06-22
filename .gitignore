@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# leave everything else untouched
+.idea/
+.vscode/
+lib/
