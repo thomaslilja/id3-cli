@@ -1,6 +1,8 @@
 ID3-CLI
 =========
 
+[![Build Status](https://travis-ci.org/ThomasLilja/id3-cli.svg?branch=master)](https://travis-ci.org/ThomasLilja/id3-cli)
+
 Command Line Interface to get and set ID3 meta tags on MP3's.
 
 ## Installation
