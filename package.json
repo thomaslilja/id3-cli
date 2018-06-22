@@ -1,0 +1,25 @@
+{
+  "name": "id3-cli",
+  "version": "0.0.1",
+  "description": "Command Line Interface to get and set ID3 meta tags on MP3's.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasLilja/id3-cli.git"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "javascript",
+    "id3"
+  ],
+  "author": "Thomas Lilja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThomasLilja/id3-cli/issues"
+  },
+  "homepage": "https://github.com/ThomasLilja/id3-cli#readme"
+}
