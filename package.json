@@ -4,7 +4,8 @@
   "description": "Command Line Interface to get and set ID3 meta tags on MP3's.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel -w ./src -d ./lib",
+    "build": "babel ./src -d ./lib",
+    "dev": "npm run build -- -w",
     "lint": "eslint ./src",
     "test": "nyc mocha --require babel-core/register",
     "prepublishOnly": "npm run build"
