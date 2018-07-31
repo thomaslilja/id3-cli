@@ -7,7 +7,7 @@ Command Line Interface to get and set ID3 meta tags on MP3's.
 
 ## Installation
 
-  `npm install id3-cli`
+  `npm install --global id3-cli`
 
 ## Usage
 
