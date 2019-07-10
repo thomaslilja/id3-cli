@@ -12,9 +12,9 @@ import set from './set';
 clear();
 console.log(
   chalk.yellow(
-    figlet.textSync('ID3-CLI', { horizontalLayout: 'full' })
-  )
-)
+    figlet.textSync('ID3-CLI', { horizontalLayout: 'full' }),
+  ),
+);
 
 program
   .version(pckg.version, '-v, --version');
