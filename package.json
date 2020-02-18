@@ -1,6 +1,6 @@
 {
   "name": "id3-cli",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Command Line Interface to get and set ID3 meta tags on MP3's.",
   "main": "lib/index.js",
   "scripts": {
