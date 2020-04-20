@@ -7,7 +7,7 @@ import NodeID3 from 'node-id3';
 export default (file) => {
   fs.access(file, fs.constants.F_OK, (err) => {
     if (err) {
-      console.log(chalk.red(`File '${file}' doesn't exist.`));
+      console.log(chalk.red(`File '${file}' does not exist.`));
       process.exit(1);
     }
     NodeID3.read(file, (readError, tags) => {
